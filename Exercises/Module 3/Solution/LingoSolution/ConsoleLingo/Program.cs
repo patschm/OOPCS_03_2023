@@ -73,7 +73,7 @@
         {
             Console.WriteLine("{0}e beurt. Geef een woord", attempt);
             string? userWord = Console.ReadLine();
-            return new LingoWord(userWord!);
+            return new LingoWord(userWord);
         }
         // TODO 5a: Change the return type of this method from string to LingoWord and modify the code accordingly.
         private static LingoWord GenerateWord()

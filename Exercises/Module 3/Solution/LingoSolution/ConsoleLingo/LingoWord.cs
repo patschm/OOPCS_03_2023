@@ -12,7 +12,7 @@
 
         public void Show()
         {
-            foreach(LingoCharacter c in internalWord)
+            foreach (LingoCharacter c in internalWord)
             {
                 c.Draw();
             }
@@ -24,23 +24,25 @@
         }
         public bool AreEqual(LingoWord guess)
         {
-            for(int i = 0; i < internalWord.Length; i++ )
+            for (int i = 0; i < internalWord.Length; i++)
             {
-                if (guess.internalWord[i].character != this.internalWord[i].character)
-                {                  
+                if (guess.internalWord[i]._character != this.internalWord[i]._character)
+                {
                     return false;
                 }
-            }          
+            }
             return true;
         }
-        public LingoWord(string word)
+        public LingoWord(string? word)
         {
-            this.internalWord = new LingoCharacter[word.Length];
-            for(int i = 0; i < word.Length;i++)
+            int length = word != null ? word.Length: 0;
+            this.internalWord = new LingoCharacter[length];
+            for (int i = 0; i < length; i++)
             {
-                LingoCharacter ch = new LingoCharacter(word[i], i);
+                LingoCharacter ch = new LingoCharacter(word![i], i);
                 this.internalWord[i] = ch;
             }
         }
+
     }
 }

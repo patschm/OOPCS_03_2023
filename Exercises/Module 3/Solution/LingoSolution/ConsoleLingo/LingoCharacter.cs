@@ -7,21 +7,21 @@
     // - constructor to provide the fields with a value.
     public class LingoCharacter
     {
-        public char character;
+        public char _character;
         public int position;
 
         public void Draw()
         {
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(character);
+            Console.Write(_character);
             Console.ResetColor();
         }
 
-        public LingoCharacter(char c, int pos)
+        public LingoCharacter(char character, int pos)
         {
-            this.position = pos;
-            this.character = c;
+            position = pos;
+            _character = character;
         }
     }
 }
