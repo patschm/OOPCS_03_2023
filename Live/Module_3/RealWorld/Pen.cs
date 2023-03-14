@@ -41,14 +41,14 @@
             }
         }
         // Auto-generating property. Generates it's own field.
-        public ConsoleColor LineColor { get; set; }
+        public ConsoleColor LineColor { get; set; } = ConsoleColor.Black;
 
         // Methods
         // Use methods to define behavior
         public void Write(string txt)
         {
             Console.ForegroundColor = LineColor;
-            Console.WriteLine($"Writing {txt} with linewidth: {lineWidth} ");
+            Console.WriteLine($"Writing {txt} with linewidth: {LineWidth} ");
             Console.ResetColor();
         }
 
@@ -62,7 +62,7 @@
         }
         public Pen(uint lnWidth, ConsoleColor lnColor)
         {
-            lineWidth = lnWidth;
+            LineWidth = lnWidth;
             LineColor = lnColor;
         }
     }
