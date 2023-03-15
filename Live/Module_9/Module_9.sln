@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flexible", "Flexible\Flexible.csproj", "{96112598-2F19-4BB3-B73A-48FE57C9F20A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneMoreThing", "OneMoreThing\OneMoreThing.csproj", "{898A5198-2121-4250-B7B1-A6880F1DC724}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96112598-2F19-4BB3-B73A-48FE57C9F20A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96112598-2F19-4BB3-B73A-48FE57C9F20A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96112598-2F19-4BB3-B73A-48FE57C9F20A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96112598-2F19-4BB3-B73A-48FE57C9F20A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898A5198-2121-4250-B7B1-A6880F1DC724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898A5198-2121-4250-B7B1-A6880F1DC724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898A5198-2121-4250-B7B1-A6880F1DC724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898A5198-2121-4250-B7B1-A6880F1DC724}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A7667A6-EE2D-4FD8-96D2-7BBE2571A1F3}
+	EndGlobalSection
+EndGlobal
