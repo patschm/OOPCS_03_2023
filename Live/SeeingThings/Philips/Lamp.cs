@@ -1,7 +1,15 @@
-﻿namespace Philips;
+﻿//using Siemens;
+using Standards;
 
-public class Lamp
+namespace Philips;
+
+public class Lamp : IDetector
 {
+    public void Detecting()
+    {
+        On();
+    }
+
     public void On()
     {
         Console.WriteLine("The lamp lights up the road");

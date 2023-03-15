@@ -1,7 +1,15 @@
-﻿namespace Canon;
+﻿//using Siemens;
+using Standards;
 
-public class Camera
+namespace Canon;
+
+public class Camera : IDetector
 {
+    public void Detecting()
+    {
+        Record();
+    }
+
     public void Record()
     {
         Console.WriteLine("The camera starts recording");

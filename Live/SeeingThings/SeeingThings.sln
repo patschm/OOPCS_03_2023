@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Siemens", "Siemens\Siemens.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheStreet", "TheStreet\TheStreet.csproj", "{73AFC828-EBEA-49FD-98E9-5F5C6996BD96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Standards", "Standards\Standards.csproj", "{55578BD8-9835-45FD-A0ED-401BEF16B337}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{73AFC828-EBEA-49FD-98E9-5F5C6996BD96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73AFC828-EBEA-49FD-98E9-5F5C6996BD96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73AFC828-EBEA-49FD-98E9-5F5C6996BD96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55578BD8-9835-45FD-A0ED-401BEF16B337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55578BD8-9835-45FD-A0ED-401BEF16B337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55578BD8-9835-45FD-A0ED-401BEF16B337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55578BD8-9835-45FD-A0ED-401BEF16B337}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

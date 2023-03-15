@@ -10,16 +10,19 @@ internal class Program
         MathDel? m1 = simon.Add;
         m1 += simon.Add;
         m1 += simon.Subtract;
-        m1 += simon.Add; 
-        m1 -= simon.Subtract;
+        m1 += simon.Add;
+        //m1 -= simon.Subtract;
 
-        foreach(var entry in m1.GetInvocationList())
+        int res = m1(3, 4);
+        Console.WriteLine(  res);
+
+        foreach (var entry in m1.GetInvocationList())
         {
             Console.WriteLine(  entry.Method.Name);
         }
         
 
-        willem.Calculate(m1, 3,2 );
+        //willem.Calculate(m1, 3,2 );
         //willem.Calculate(simon.Subtract, 5, 8);
     }
 }

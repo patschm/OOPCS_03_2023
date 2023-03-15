@@ -13,6 +13,8 @@ namespace Graphic
             //ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
 
+            Test t = new Test();
+
             Form fm1 = new Form();
             fm1.Text = "Hello Form";
 
@@ -21,7 +23,12 @@ namespace Graphic
             btn1.Width = 100;
             btn1.Height = 100;
             btn1.Text = "Click me!!";
-            btn1.Click += Hellup;
+            btn1.Click += t.Hellup;
+
+            //foreach(var item in btn1.Click.GetInvocationList())
+            //{
+
+            //}
 
             fm1.Controls.Add(btn1);
 
@@ -31,8 +38,10 @@ namespace Graphic
             Task.Delay(10000).Wait();
             Console.ReadLine();
         }
-
-        static void Hellup(object? sender, EventArgs e)
+    }
+    class Test
+    { 
+        public void Hellup(object? sender, EventArgs e)
         {
             if (sender is Button)
             {
