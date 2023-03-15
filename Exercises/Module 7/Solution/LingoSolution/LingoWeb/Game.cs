@@ -21,7 +21,7 @@ public class Game
     {
         get
         {
-            return Guesses.Count + 1;
+            return Guesses.Count;
         }
     }
     public bool IsFinished
