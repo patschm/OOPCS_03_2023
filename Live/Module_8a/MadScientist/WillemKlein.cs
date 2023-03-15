@@ -1,12 +1,14 @@
 ﻿namespace MadScientist;
 
+delegate int MathDel(int aaa, int baa);
+
 internal class WillemKlein
 {
-    public void Calculate()
+    public void Calculate(MathDel fun, int aa, int bb)
     {
         Console.WriteLine("Willem starts calculating...");
 
-        int result = 0;
+        int result = fun(aa,bb);
         // TODO
 
 
