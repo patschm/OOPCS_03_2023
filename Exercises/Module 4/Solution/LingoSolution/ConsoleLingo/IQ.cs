@@ -1,12 +1,10 @@
-﻿
-namespace ConsoleLingo
+﻿namespace ConsoleLingo;
+
+public enum IQ
 {
-    public enum IQ
-    {
-        Brilliant = 1,
-        Bright,
-        Average,
-        Mediocre,
-        Stupid
-    }
+    Brilliant = 1,
+    Bright,
+    Average,
+    Mediocre,
+    Stupid
 }

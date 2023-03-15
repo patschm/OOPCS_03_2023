@@ -1,48 +1,45 @@
-﻿using System;
+﻿namespace ConsoleLingo;
 
-namespace ConsoleLingo
+public class LingoWord
 {
-    public class LingoWord
-    {
-        // TODO 4a: Make this field private
-        private readonly LingoCharacter[] internalWord;
+    // TODO 4a: Make this field private
+    private readonly LingoCharacter[] internalWord;
 
-        // TODO 4b: Define a readonly Count property which returns
-        // the length of internalWord array.
-        public int Count
+    // TODO 4b: Define a readonly Count property which returns
+    // the length of internalWord array.
+    public int Count
+    {
+        get
         {
-            get
-            {
-                return internalWord.Length;
-            }
+            return internalWord.Length;
         }
-        public void Show()
+    }
+    public void Show()
+    {
+        for(int i = 0; i < Count; i++)
         {
-            for(int i = 0; i < internalWord.Length; i++)
-            {
-                this.internalWord[i].Draw();
-            }
-            Console.WriteLine();
+            this.internalWord[i].Draw();
         }
-        public bool AreEqual(LingoWord guess)
+        Console.WriteLine();
+    }
+    public bool AreEqual(LingoWord guess)
+    {
+        for(int i = 0; i < Count; i++ )
         {
-            for(int i = 0; i < internalWord.Length; i++ )
-            {
-                if (guess.internalWord[i].Character != this.internalWord[i].Character)
-                {                  
-                    return false;
-                }
-            }          
-            return true;
-        }
-        public LingoWord(string? word)
-        {
-            this.internalWord = new LingoCharacter[word!.Length];
-            for(int i = 0; i < word.Length;i++)
-            {
-                LingoCharacter ch = new LingoCharacter(word[i], i);
-                this.internalWord[i] = ch;
+            if (guess.internalWord[i].Character != this.internalWord[i].Character)
+            {                  
+                return false;
             }
+        }          
+        return true;
+    }
+    public LingoWord(string? word)
+    {
+        this.internalWord = new LingoCharacter[word!.Length];
+        for(int i = 0; i < word.Length;i++)
+        {
+            LingoCharacter ch = new LingoCharacter(word[i], i);
+            this.internalWord[i] = ch;
         }
     }
 }
