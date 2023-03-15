@@ -4,6 +4,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
+        string s = "";
         Point p1 = new Point { X=10, Y=20 };
         Point p2 = new Point { X=100, Y=200 };
 

@@ -2,7 +2,10 @@
 
 internal class Floor
 {
+    // friend == internal (public withing the library. Private outside
+    // internal static Elevator lift = new Elevator();
     private static Elevator lift = new Elevator();
+
     public int Number { get; set; }
 
     public void CallElevator()
